@@ -1,0 +1,390 @@
+body{
+	margin: 0;
+	width: 100%;
+	font-family: 'Muli';
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	height: 10%;
+	margin-top: 0%;
+	z-index: 1;
+}
+
+
+.header .header_logo img{
+	position: absolute;
+	top: 10%;
+	left: 2%;
+	max-height: 60%;
+	max-width: 50%;
+}
+
+
+.header .header_list{
+	position: relative;
+	left: 25%;
+}
+
+.header .header_list li{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0% 2% 0 2%;
+	font-size: 1.5vw;
+}
+
+.header .header_list li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Muli', sans-serif;
+	position: relative; 
+}
+
+.header .header_list li:hover{
+	transform: scale(1.1);
+	font-family: cursive;
+	border-radius: 5px 5px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #abc;
+	color: white;
+	background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 5px 5px;
+}
+
+
+.header .header_buttons{
+	position: absolute;
+	top: 30%;
+	right: 0;
+	margin-right: 5%;
+	float: right;
+}
+
+.header_buttons button:hover{
+	cursor: pointer;
+}
+
+.header_buttons button{
+	color: white;
+	border:none;
+	font-size: 1.5vw;
+	background-color: black;
+}
+
+/* The popup form - hidden by default */
+.form-popup{
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 25%;
+  border: 3px solid #f1f1f1;
+  z-index: 1;
+  font-family: 'Muli';
+  
+}
+
+/* The popup form - hidden by default */
+.form-popup{
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 25%;
+  border: 3px solid #f1f1f1;
+  z-index: 1;
+  font-family: 'Muli';
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 600px;
+  padding: 10px;
+  background-color: white;
+  border: 25px 25px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 95%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: rgba(209,209,209,1);
+  color: black;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.adoption-container{
+	width: 95%;
+	margin-bottom: 7%;
+}
+
+.content {
+	margin-left: 5%;
+	margin-top: 2%;
+  }
+  
+.adoption-container .content img{
+	width: 100%;
+	height: 100%;
+}
+
+.content h1 {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.content p{
+	text-align: justify;
+	position: center;
+}
+
+.Available-adoption{
+	padding: 30px 150px;
+	background-color: white;
+	color: none;
+	font-family: muli;
+	text-align: justify;
+	border-radius: 10px 10px;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	
+}
+
+.Available-adoption h2{
+	margin-top: 6%;
+	text-align: center;
+	font-family: muli;
+	margin-bottom: 5%;
+}
+
+
+.Available-adoption li{
+	display: inline-block;
+	text-align: center;
+	margin-left: 2%;
+	margin-top:2%;
+	list-style-type: none;
+}
+
+.Available-adoption li a{
+	text-decoration: none;
+	color: black;
+}
+
+.Available-adoption li a button {
+	margin-top: 5px;
+	border: 2px solid black;
+	border-radius: 10px 10px; 
+	padding-left: 4px;
+	display: block;
+}
+
+.Available-adoption img{
+	width: 200px;
+	height: 200px;
+}
+
+
+.adoption-categories {
+	display: flex;
+	justify-content: space-between;
+}
+
+.adopt-category button a{
+	font-family: "Muli";
+	color: white;
+	text-decoration: none;
+}
+
+.adopt-category img {
+	
+	border-radius: 3%;
+}
+
+.adopt-category button{
+	text-decoration: none;
+	display: block;
+	padding: 	9px;
+	background: #22a6b3;
+	border:none;
+	border-radius: 8%;
+}
+
+.cat-btn {
+	display: flex;
+	justify-content: center;
+	margin-top: 9px;
+} 
+
+/*popup starts here */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family:  Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+.footers{
+	background-color: black;
+	color: white;
+	font-family: 'Muli';	
+	position: relative;
+	font-size: 1.2vw;
+}
+
+
+.footers .row .column2{
+	margin-left: 35%;
+}
+
+.footers .row .column{
+  float: left;
+  width: 30%;
+  text-align: center;
+  font-size: 1.5vw;
+
+}
+
+.footers .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dog_footer img{
+	width: 20%;
+	height: 120%; 
+	position: absolute;
+	bottom: 10%;
+	left: 8%;
+}
+
+.footers .column a{
+	text-decoration: none;
+	color:white;
+
+}
+
+.footers .column a:hover{
+	color: blue;
+}
+
+
+
+.footers .copyright{
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+	font-size: 1.2vw;
+}

@@ -1,0 +1,641 @@
+body{
+	margin: 0;
+	width: 100%;
+	font-family: 'Muli';
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	height: 10%;
+	margin-top: 0%;
+	z-index: 1;
+}
+
+
+.header .header_logo img{
+	position: absolute;
+	top: 10%;
+	left: 2%;
+	max-height: 60%;
+	max-width: 50%;
+}
+
+
+.header .header_list{
+	position: relative;
+	left: 25%;
+}
+
+.header .header_list li{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0% 2% 0 2%;
+	font-size: 1.5vw;
+}
+
+.header .header_list li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Muli', sans-serif;
+	position: relative; 
+}
+
+.header .header_list li:hover{
+	transform: scale(1.1);
+	font-family: cursive;
+	border-radius: 5px 5px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #abc;
+	color: white;
+	background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 5px 5px;
+}
+
+
+.header .header_buttons{
+	position: absolute;
+	top: 30%;
+	right: 0;
+	margin-right: 5%;
+	float: right;
+}
+
+.header_buttons button:hover{
+	cursor: pointer;
+}
+
+.header_buttons button{
+	color: white;
+	border:none;
+	font-size: 1.5vw;
+	background-color: black;
+}
+
+ #login{
+	padding: 0 20px;
+}
+
+.header_buttons button:hover{
+	opacity: 1;
+	transform: scale(1.2);
+	background-color: black;
+}
+
+.header_buttons button:active{
+	border: none;
+	outline: none;
+}
+
+/* The popup form - hidden by default */
+.form-popup{
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 25%;
+  border: 3px solid #f1f1f1;
+  z-index: 1;
+  font-family: 'Muli';
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 600px;
+  padding: 10px;
+  background-color: white;
+  border: 25px 25px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 95%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: rgba(209,209,209,1);
+  color: black;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.mySlides {
+	padding-top: 7%;
+	margin: 0 7%;
+	height: 100%;
+	width: 100%;
+} 
+
+
+.display-container{
+		max-width: 87%;
+}
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup{
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 25%;
+  border: 3px solid #f1f1f1;
+  z-index: 1;
+  font-family: 'Muli';
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 700px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 95%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.items{
+	padding: 30px 150px;
+	background-color: white;
+	margin-top: 0;
+	color: none;
+	font-family: muli;
+	text-align: justify;
+	border-radius: 10px 10px;
+}
+
+.items h2{
+	text-align: center;
+  font-family: muli;
+  margin-bottom: 5%;
+}
+
+.items li{
+	display: inline-block;
+	text-align: center;
+	margin-left: 2%;
+	margin-top:2%;
+	list-style-type: none;
+}
+
+.items li a{
+	text-decoration: none;
+	color: black;
+}
+
+.items li a button {
+	margin-top: 5px;
+	border: 2px solid black;
+	border-radius: 10px 10px; 
+	padding-left: 4px;
+	display: block;
+}
+
+.items img{
+	width: 200px;
+	height: 200px;
+}
+
+
+
+.bottom_container{
+	margin-left: 6%;
+	width: 88%;
+	height:50%;
+	
+}
+
+.bottom_container .row1 .columns{
+	width: 50%;
+	float: left;
+	font-family: 'Patrick Hand';
+	color: #ffcc80;
+}  
+
+.bottom_container .row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottom_container .row1 .columns #h1{ 
+	font-size: 100px;
+
+}
+
+.bottom_container .row1 .columns #h2{
+
+	font-size: 80px;
+
+}
+
+.categories {
+	display: flex;
+	justify-content: space-between;
+}
+
+.single-category img {
+	border-radius: 50%;
+}
+
+.single-category button {
+	display: block;
+	padding: 	9px;
+	background: none;
+	border: none;
+	border: 1px solid black;
+	color:black;
+	font-family: "Muli";
+	border-radius: 5px;
+}
+
+.single-category button:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.cat-btn {
+	display: flex;
+	justify-content: center;
+	margin-top: 9px;
+}
+
+.row1 {
+	margin-top: 75px;
+}
+
+.relative-row {
+	position: relative;
+}
+
+.dogabsolute {
+	position: absolute;
+	top: -109px;
+}
+
+.contactus{
+	position: absolute;
+	margin-left: 21%;
+}
+
+.followus{
+	margin-left: 45%;
+}
+
+.trending{
+	padding: 30px 150px;
+	background-color: white;
+	margin-top: 0;
+	color: none;
+	font-family: muli;
+	text-align: justify;
+	border-radius: 10px 10px;
+	margin-bottom: 8%;
+	
+}
+
+.trending h2{
+	text-align: center;
+	font-family: muli;
+	margin-bottom: 5%;
+}
+
+
+.trending li{
+	display: inline-block;
+	text-align: center;
+	margin-left: 2%;
+	margin-top:2%;
+	list-style-type: none;
+}
+
+.trending li a{
+	text-decoration: none;
+	color: black;
+}
+
+.trending li a button {
+	margin-top: 5px;
+	border: 2px solid black;
+	border-radius: 10px 10px; 
+	padding-left: 4px;
+	display: block;
+}
+
+.trending img{
+	width: 200px;
+	height: 200px;
+}
+
+
+.trending-categories {
+	display: flex;
+	justify-content: space-between;
+}
+
+.trend-category img {
+	border-radius: 3%;
+}
+
+.trend-category button {
+	display: block;
+	padding: 	9px;
+	background: none;
+	border: 1px solid #000;
+}
+
+.trend-category .overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	visibility: hidden;
+	opacity: 0;
+  }
+  .trend-category .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .trend-category .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .trend-category .popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family:  Arial, sans-serif;
+  }
+  .trend-category .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .trend-category .popup .close:hover {
+	color: #06D85F;
+  }
+  .trend-category .popup .content {
+	max-height: 30%;
+	overflow: auto;
+  }
+  
+  
+  
+  @media screen and (max-width: 700px){
+	.trend-category .box{
+	  width: 70%;
+	}
+	.trend-category .popup{
+	  width: 70%;
+	}
+  }
+  
+
+.newarrivals{
+	padding: 30px 150px;
+	background-color: white;
+	margin-top: 0;
+	color: none;
+	font-family: muli;
+	text-align: justify;
+	border-radius: 10px 10px;
+	margin-bottom: 10%;
+	
+}
+
+.newarrivals h2{
+	text-align: center;
+	font-family: muli;
+	margin-bottom: 5%;
+}
+
+
+.newarrivals li{
+	display: inline-block;
+	text-align: center;
+	margin-left: 2%;
+	margin-top:2%;
+	list-style-type: none;
+}
+
+.newarrivals li a{
+	text-decoration: none;
+	color: black;
+}
+
+.newarrivals li a button {
+	margin-top: 5px;
+	border: 2px solid black;
+	border-radius: 10px 10px; 
+	padding-left: 4px;
+	display: block;
+}
+
+.newarrivals img{
+	width: 200px;
+	height: 200px;
+}
+
+
+.newarrivals-categories {
+	display: flex;
+	justify-content: space-between;
+}
+
+.newarrival-category img {
+	border-radius: 3%;
+}
+
+.newarrival-category button{
+	display: block;
+	padding: 	9px;
+	background: none;
+	border: 1px solid #000;
+}
+
+#contact{
+	list-style: none;
+}
+
+#copyright{
+	list-style: none;
+	text-align: center;
+}
+
+.adoption-container{
+	width: 88%;
+}
+
+.content {
+	
+  }
+  
+.content h1 {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.content p{
+	text-align: justify;
+	position: center;
+}
+
+
+.footers{
+	background-color: black;
+	color: white;
+	font-family: 'Muli';	
+	position: relative;
+	font-size: 1.2vw;
+}
+
+
+.footers .row .column2{
+	margin-left: 35%;
+}
+
+.footers .row .column{
+  float: left;
+  width: 30%;
+  text-align: center;
+  font-size: 1.5vw;
+
+}
+
+.footers .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dog_footer img{
+	width: 20%;
+	height: 120%; 
+	position: absolute;
+	bottom: 10%;
+	left: 8%;
+}
+
+.footers .column a{
+	text-decoration: none;
+	color:white;
+
+}
+
+.footers .column a:hover{
+	color: blue;
+}
+
+
+
+.footers .copyright{
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+	font-size: 1.2vw;
+}

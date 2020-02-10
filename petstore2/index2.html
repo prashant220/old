@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PetStore</title>
+	<link rel="stylesheet" type="text/css" href="index.css">	
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="header">
+	<a href="index.php"><img src="images/logo.gif" id="logo"></a>
+		<div class="header_list">
+			<ul>
+				<li><a href="petmart.php">PetMart</a></li>
+				<div class="dropdown">
+				<li><a href="contact.php" class="drop-btn">Categories</a></li>
+				
+			  <div class="dropdown-content">
+			  <a href="#">Link 1</a>
+			  <a href="#">Link 2</a>
+			  <a href="#">Link 3</a>
+			  </div>
+		</div>
+				<li><a href="adopt.php">Want to adopt?</a></li>
+			</ul>
+		</div>
+		
+		
+		
+		<div class="header_buttons">
+			<button id="login" style="padding-right: 20px; padding-left: 20px; margin-right: 10px;" onclick="openForm()"> Login</button>
+			<button id="Register">Register</button>
+		</div>
+		
+		<div class="form-popup" id="myForm">
+			<form action="/action_page.php" class="form-container">
+			    <h1><center>Login</center></h1>
+
+			    <label for="email"><b>Email</b></label>
+			    <input type="text" placeholder="Enter Email" name="email" required>
+
+			    <label for="psw"><b>Password</b></label>
+			    <input type="password" placeholder="Enter Password" name="psw" required>
+
+			    <button type="submit" class="btn">Login</button>
+			    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		</div>
+		
+
+		<script>
+			function openForm() {
+			  document.getElementById("myForm").style.display = "block";
+			}
+
+			function closeForm() {
+			  document.getElementById("myForm").style.display = "none";
+			}
+		</script>
+
+</div>
+
+
+<div class="dog-img">
+	<img src="images/dog.jpg">
+</div>
+	
+
+<div class="items">
+	<ul>
+	<li><a href="dog-items.html"><figure><img src="images/dogs.jpg"><figcaption>Dog Items</figcaption></figure></a>	</li>
+	<li><a href="cat-items.html"><figure><img src="images/cat.jpg"><figcaption>Cat Items</figcaption></figure></a></li>
+	<li><a href="fish-items.html"><figure><img src="images/fish.jpeg"><figcaption>Fish Items</figcaption></figure></a></li>
+	<li><a href="bird-items.html"><figure><img src="images/bird.gif"><figcaption>Bird Items</figcaption></figure></a></li>
+	</ul>
+</div>
+
+
+<div class="footers">
+	<div class="row">
+		<div class="column">
+		
+		<h3>PetStore</h3>
+		PetStore is an online website providing the services for pets. We also aim to provide service for adopting the pets.
+		</div>
+		<div class="column">
+			<h3>Information</h3>
+			<a href="contact.html">Contact Us</a><br>
+			<a href="about.html">About Us</a><br>
+			<a href="gmail.com">Email Us</a>
+		</div>
+		<div class="column">
+		</div>
+	</div>
+	<div class="copright" style="text-align: center; padding: 1% 0;">
+			&copy;2019-2020 <a href="index.php">PetStore</a> All rights reserved 
+
+		<div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adoption</title>
+	<link rel="stylesheet" type="text/css" href="adopt.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="header">
+	<div class="header_logo">
+		<a href="index.php"><img src="images/logo.png" id="logo"></a>
+	</div>
+		<div class="header_list">
+			<ul>
+				<li><a href="petmart.php">PetMart</a></li>
+				<div class="dropdown">
+				<li><a href="#" class="drop-btn">Categories</a></li>
+				
+			  <div class="dropdown-content">
+			  <a href="#">Dog Items</a>
+			  <a href="#">Cat Items</a>
+			  <a href="#">Fish Items</a>
+			  <a href="#">Bird Items</a>
+			  </div>
+		</div>
+				<li><a href="adopt.php">Want to adopt?</a></li>
+			</ul>
+		</div>
+		
+		
+		
+		<div class="header_buttons">
+			<button id="login" onclick="openForm()"> Login</button>
+			<button id="Register">Register</button>
+		</div>
+		
+		<div class="form-popup" id="myForm">
+			<form action="/action_page.php" class="form-container">
+			    <h1><center>Login</center></h1>
+
+			    <label for="email"><b>Email</b></label>
+			    <input type="text" placeholder="Enter Email" name="email" required>
+
+			    <label for="psw"><b>Password</b></label>
+			    <input type="password" placeholder="Enter Password" name="psw" required>
+
+			    <button type="submit" class="btn">Login</button>
+			    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		</div>
+</div>
+
+
+<div class="Available-adoption">
+	<h2>Available For Adoption</h2>
+		<div class="adoption-categories">
+			
+
+			<div class="adopt-category">
+				<img src="images/sdogs/sd2.jpg" alt="">
+				<div class="cat-btn">
+					<div class="box">
+					<button><a href="#popup1">Details</a></button>
+				</div>
+					<div id="popup1" class="overlay">
+				
+				<div class="popup">
+					<h2>Adopt</h2>
+					<a class="close" href="#">&times;</a>
+						<div class="content">
+				<center><img src="images/sdogs/sd2.jpg" ></center><br>
+				<center>Adopt me. Please!!!<br></center>
+				<center><button style="margin-top: 10px;">Contact us</button></center>
+						</div>
+				</div>
+			</div>
+
+
+				</div>
+			</div>
+		<div class="adopt-category">
+			<img src="images/sdogs/sd3.jpg" alt="">
+			<div class="cat-btn">
+				<div class="box">
+				<button><a href="#popup2">Details</a></button>
+				</div>
+				<div id="popup2" class="overlay">
+				
+				<div class="popup">
+					<h2>Adopt</h2>
+					<a class="close" href="#">&times;</a>
+						<div class="content">
+				<center><img src="images/sdogs/sd3.jpg" height="500px" width="500px"><br></center>
+				<center>Adopt me. Please!!<br></center>
+				<center><button>Contact Us</button></center>
+						</div>
+				</div>
+			</div>
+
+			</div>
+		</div>
+		<div class="adopt-category">
+			<img src="images/sdogs/sd4.jpg" alt="">
+			<div class="cat-btn">
+				<div class="box">
+				<button><a href="#popup3">Details</a></button>
+				</div>
+				<div id="popup3" class="overlay">
+				
+				<div class="popup">
+					<h2>Adopt</h2>
+					<a class="close" href="#">&times;</a>
+						<div class="content">
+						<center><img src="images/sdogs/sd4.jpg" height="500px" width="500px"><br></center>
+						<center>Adopt me. Please!!<br></center>
+						<center><button>Contact Us</button></center>
+						</div>
+				</div>
+			</div>
+
+			</div>
+		</div>
+		<div class="adopt-category">
+			<img src="images/sdogs/sd1.jpg" alt="">
+			<div class="cat-btn">
+				<div class="box">
+				<button><a href="#popup4">Details</a></button>
+				</div>
+				<div id="popup4" class="overlay">
+				
+				<div class="popup">
+					<h2>Adopt</h2>
+					<a class="close" href="#">&times;</a>
+						<div class="content">
+						<center><img src="images/sdogs/sd1.jpg" height="500px" width="500px"><br></center>
+						<center>Adopt me. Please!!<br></center>
+						<center><button>Contact Us</button></center>
+						</div>
+				</div>
+			</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="adoption-container">
+		<div class="content">
+			<h1>Please adopt!!!</h1>
+			<img src="images/dog-girl.jpg">
+			<p>
+			Each year, it's estimated that more than one million adoptable dogs and cats are euthanized in the United States, simply because too many pets come into shelters and too few people consider adoption when looking for a pet.
+			The number of euthanized animals could be reduced dramatically if more people adopted pets instead of buying them.
+			When you adopt, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.
+			<br>
+			<br>
+			<h1>Ten reasons to adopt your new best friend.</h1>
+			<ol>
+			<li><h3> Because you'll save a life.</h3>
+				Each year, it's estimated that more than one million adoptable dogs and cats are euthanized in the United States, simply because too many pets come into shelters and too few people consider adoption when looking for a pet.
+				The number of euthanized animals could be reduced dramatically if more people adopted pets instead of buying them. When you adopt, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.	
+			</li>
+			<br>
+			<li><h3>Because you'll get a great animal.</h3>
+				Animal shelters and rescue groups are brimming with happy, healthy pets just waiting for someone to take them home. Most shelter pets wound up there because of a human problem like a move or a divorce, not because the animals did anything wrong. Many are already house-trained and used to living with families.
+			</li>
+			<br>
+			<li><h3>Because it’ll cost you less.</h3>
+				Usually when you adopt a pet, the cost of spay/neuter, first vaccinations (and sometimes even microchipping!) is included in the adoption price, which can save you some of the up front costs of adding a new member to your family. Depending on the animal, you may also save on housebreaking and training expenses.
+			</li>
+			<br>
+			<li><h3>Because of the bragging rights.</h3>
+				No one needs to see another selfie—unless it’s a selfie of you with the adorable pet you just adopted! Adopt a pet, post those pictures and let the well-earned likes roll in.
+			</li>
+			<br>
+			<li><h3>Because it's one way to fight puppy mills.</h3>
+				If you buy a dog from a pet store,online seller or flea market, you’re almost certainly getting a dog from a puppy mill.
+
+				Puppy mills are factory-style breeding facilities that put profit above the welfare of dogs. Animals from puppy mills are housed in shockingly poor conditions with improper medical care, and are often very sick and behaviorally troubled as a result. The moms of these puppies are kept in cages to be bred over and over for years, without human companionship and with little hope of ever joining a family. And after they're no longer profitable, breeding dogs are simply discarded—either killed, abandoned or sold at auction.
+
+				These puppy mills continue to stay in business through deceptive tactics — their customers are unsuspecting consumers who shop in pet stores, over the Internet or through classified ads. Puppy mills will continue to operate until people stop supporting them. By adopting a pet, you can be certain you aren't giving them a dime.
+				</li>
+			<br>
+			<li><h3> Because your home will thank you.</h3>
+				Many of the pets from shelters and rescues are already house-trained, which means you’re not only saving a pet’s life, you may be saving your rug. Adopting a mature pet not only gives older animals a second chance, it often means introducing them to your family will be much easier.
+				</li>
+			<br>
+			<li><h3>Because all pets are good for your health, but adoptees offer an extra boost.</h3>
+				Not only do animals give you unconditional love, but they have been shown to be psychologically, emotionally and physically beneficial to their companions. Caring for a pet can provide a sense of purpose and fulfillment and lessen feelings of loneliness. And when you adopt, you can also feel proud about helping an animal in need!
+				</li>
+			<br>
+			<li><h3>Because adoption helps more than just one animal.</h3>
+				Overburdened shelters take in millions of stray, abused and lost animals every year, and by adopting an animal, you’re making room for others. Not only are you giving more animals a second chance, but the cost of your adoption goes directly towards helping those shelters better care for the animals they take in!
+				</li>
+			<br>
+			<li><h3>Because The Shelter Pet Project makes it easy.</h3>
+				You can go to the Shelter Pet Project to find pets near you, of every size, color, temperament and breed. Purebred and mixed breed animals alike are waiting for their forever homes!
+				</li>
+			<br>
+			<li><h3>Because you'll change a homeless animal's whole world.</h3>
+				And get a new best friend out of the deal. Seriously, what could be better than that?
+				</li>
+			<br>
+			</p>
+		</div>
+</div>
+	
+<div class="footers">
+	<div class="row">
+		<div class="column">
+			<div class="dog_footer">
+				<img src="images/dog_footer.png">
+			</div>
+		</div>
+		<div class="column column2">
+		
+		<h3>Contact Us</h3>
+		www.facebook.com<br>
+		01-5544551
+		</div>
+		<div class="column">
+			<h3>Follow Us</h3>
+			www.facebook.com<br>
+			www.twitter.com
+		</div>
+		
+	</div>
+	<div class="copright" style="text-align: center; padding: 3% 0 2% 0;">
+			&copy; 2019-2020 <a href="index.php" style="text-decoration: none; color: white;">PetStore</a> All rights reserved 
+
+		<div>
+</div>
+
+</body>
+
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	}
+	x[slideIndex-1].style.display = "block";  
+	}
+</script>
+
+<script>
+			function openForm() {
+			  document.getElementById("myForm").style.display = "block";
+			}
+
+			function closeForm() {
+			  document.getElementById("myForm").style.display = "none";
+			}	
+</script>
+
+</html>
